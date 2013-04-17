@@ -1,0 +1,21 @@
+{
+  "name": "pgr_cms_sdk_js",
+  "version": "0.0.13",
+  "private": true,
+  "description": "",
+  "main": "public/js/pgr.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "bb",
+  "license": "none",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "request": "~2.16.6",
+    "supertest": "~0.6.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}
