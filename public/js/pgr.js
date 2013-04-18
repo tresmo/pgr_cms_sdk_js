@@ -49,6 +49,7 @@
                 return function(method, url, data, headers, cb, ctx) {
                     $.ajax({
                         url: url,
+                        crossDomain: true,
                         data: data,
                         type: method,
                         cache: false,
