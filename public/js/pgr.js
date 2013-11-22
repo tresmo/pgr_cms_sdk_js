@@ -196,8 +196,12 @@
             this.req("PUT", "/posts/" + data.id, data, cb, ctx);
         };
 
-        Client.prototype.deletePost = function(id, cb, ctx) {
-            this.req("DELETE", "/posts/" + id, {}, cb, ctx);
+        Client.prototype.deletePost = function(data, cb, ctx) {
+            if(typeof(data) == 'object') {
+                this.req("DELETE", "/posts/" + data.id, data, cb, ctx);
+            } else {
+                this.req("DELETE", "/posts/" + data, {}, cb, ctx);
+            }
         };
 
         Client.prototype.getPost = function(id, cb, ctx) {
